@@ -1,0 +1,2 @@
+This entity helps you to import workers in Dynamics 365 for operations. Using out of the box entities, You have to import worker info , address , employment seprately. This entity helps you to import everything together. 
+Sample XML file is attached in the project .  
