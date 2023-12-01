@@ -1,0 +1,1 @@
+Import axpp file into your F&O VM. Build and synchronize the project and access utility through System administration > Set up > ASP Runnable Object 
