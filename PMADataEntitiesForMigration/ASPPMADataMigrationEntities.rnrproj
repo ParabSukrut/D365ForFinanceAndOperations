@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>ASP</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{918c5191-e8f0-4d78-b1a3-4bd76b4ee9f7}</ProjectGuid>
+    <Name>ASPPMADataMigrationEntities</Name>
+    <RootNamespace>ASPPMADataMigrationEntities</RootNamespace>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Data Entities\" />
+    <Folder Include="Security Privileges\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxDataEntityView\ASPProjProjectContractLineEntity">
+      <SubType>Content</SubType>
+      <Name>ASPProjProjectContractLineEntity</Name>
+      <Link>Data Entities\ASPProjProjectContractLineEntity</Link>
+    </Content>
+    <Content Include="AxDataEntityView\ASPPSAContractLineItemsSetupEntity">
+      <SubType>Content</SubType>
+      <Name>ASPPSAContractLineItemsSetupEntity</Name>
+      <Link>Data Entities\ASPPSAContractLineItemsSetupEntity</Link>
+    </Content>
+    <Content Include="AxDataEntityView\ASPPSAProjFundingSourceRetain">
+      <SubType>Content</SubType>
+      <Name>ASPPSAProjFundingSourceRetain</Name>
+      <Link>Data Entities\ASPPSAProjFundingSourceRetain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\ASPPSAContractLineItemsSetupEntityMaintain">
+      <SubType>Content</SubType>
+      <Name>ASPPSAContractLineItemsSetupEntityMaintain</Name>
+      <Link>Security Privileges\ASPPSAContractLineItemsSetupEntityMaintain</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\ASPPSAContractLineItemsSetupEntityView">
+      <SubType>Content</SubType>
+      <Name>ASPPSAContractLineItemsSetupEntityView</Name>
+      <Link>Security Privileges\ASPPSAContractLineItemsSetupEntityView</Link>
+    </Content>
+    <Content Include="AxTable\ASPProjProjectContractLineStaging">
+      <SubType>Content</SubType>
+      <Name>ASPProjProjectContractLineStaging</Name>
+      <Link>Tables\ASPProjProjectContractLineStaging</Link>
+    </Content>
+    <Content Include="AxTable\ASPPSAContractLineItemsSetupStaging">
+      <SubType>Content</SubType>
+      <Name>ASPPSAContractLineItemsSetupStaging</Name>
+      <Link>Tables\ASPPSAContractLineItemsSetupStaging</Link>
+    </Content>
+    <Content Include="AxTable\ASPPSAProjFundingSourceRetainStaging">
+      <SubType>Content</SubType>
+      <Name>ASPPSAProjFundingSourceRetainStaging</Name>
+      <Link>Tables\ASPPSAProjFundingSourceRetainStaging</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
