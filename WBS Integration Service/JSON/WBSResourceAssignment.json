@@ -1,0 +1,45 @@
+{
+    "company": "USMF",
+    "wbsTasks": [
+        {
+            "action": 0,
+            "CanDelete": false,
+            "DraftAssignments": [
+                {
+                    "ActivityResource": 0,
+                    "FromDate": "/Date(-2208988800000)/",
+                    "HierarchyId": "NBIN-00074",
+                    "ResourceCompany": "",
+                    "ResourceId": "",
+                    "ResourceName": "Sukrut Parab",
+                    "ResourceRecId": 5637145326,
+                    "RoleId": "",
+                    "TaskId": 0,
+                    "ToDate": "/Date(-2208988800000)/"
+                }
+            ],
+            "Effort": 32,
+            "ElementNodeType": 0,
+            "HierarchyId": "USMF-00075",
+            "Level": 0,
+            "MSPID": "",
+            "Name": "Test21",
+            "Notes": "Resource Assignment",
+            "NumberOfResources": 1,
+            "ParentTaskId": "2",
+            "Priority": 0,
+            "ProjDependencies": null,
+            "RecId": 0,
+            "RecVersion": 0,
+            "ResourceCategory": "",
+            "SiblingNumber": 0,
+            "SyncVersion": 0,
+            "TaskCategory": "",
+            "TaskDuration": 0,
+            "TaskFinishDate": "03/16/2024",
+            "TaskId": "9",
+            "TaskStartDate": "03/08/2024",
+            "WbsId": ""
+        }
+    ]
+}
