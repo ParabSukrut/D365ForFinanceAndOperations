@@ -3,7 +3,7 @@ As a part of this repo contains following artifacts
 - ASP_WBSIntegrationService.axpp - Project with Custom service code
 - WBSResourceAssignment.json - JSON Sample which you can use to post data to custom service using Postman
 
-## Posting JSON Paylot to custom service -
+## Posting JSON Payload to custom service -
   1. Open the file (e.g "WBSResourceAssignment.json")
 
 Post message to Service URL as shown below
